@@ -1,0 +1,107 @@
+@use "../../../../../../public/stylesheets/variables.scss" as *;
+.showallcommentsposts-padre {
+  background-color: $accent2-color;
+  border-radius: 2rem;
+  height: 100%;
+  min-height: 85vh;
+  max-height: 85vh;
+  max-width: 100%;
+  width: 100%;
+  padding: 2rem;
+
+  .showallcommentsposts-hijo {
+    height: 10%;
+    @include display-flex(row, flex-start, flex-start);
+    color: $accent-color;
+  }
+
+  .showallcommentsposts-hijo2 {
+    height: 80%; /* Establece la altura máxima al 50% del viewport height */
+    overflow-y: auto; /* Habilita el scroll vertical si se excede la altura máxima */
+    // overflow-x: hidden; // temporal
+    max-width: 100%;
+    background-color: $accent2-color;
+    border-radius: 2rem;
+    @include display-flex(column, flex-start, center);
+    .showallcommentsposts-nieto {
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+      @include display-flex(row, center, center);
+      &.lightColor {
+        background-color: #1f1e1e;
+        border-radius: 1rem;
+      }
+      &.darkColor {
+        background-color: #2e2d2d;
+      }
+      .nickname-oneposttrade {
+        h6 {
+          @include display-flex(row, flex-start center);
+          margin: 0 !important;
+          color: $primary-color;
+        }
+      }
+      .message-oneposttrade {
+        p {
+          word-wrap: break-word;
+        }
+      }
+      .date-oneposttrade {
+        padding: 0 !important;
+        p {
+          font-size: 12px;
+          text-align: end;
+          color: $primary-color;
+        }
+      }
+      .botonera-oneposttrade {
+        padding: 0 !important;
+        @include display-flex(row, end, flex-start);
+        .boton-eliminar-comment {
+          background-color: transparent !important;
+          border: none;
+          img {
+            width: 15px;
+          }
+        }
+      }
+    }
+    .showallcommentsposts-hijo3 {
+      max-height: 10%;
+      height: 10%;
+      @include display-flex(row, flex-start, center);
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: $tertiary-color;
+    border-radius: 25px;
+  }
+}
+// .botonera-oneposttrade{
+//   @include display-flex(row,end,flex-start);
+//   .boton-eliminar-comment{
+//   background-color: transparent !important;
+//   border: none;
+// }
+// }
+@media (width <= 649px) {
+  .nickname-oneposttrade {
+    width: 100%;
+  }
+  .message-oneposttrade {
+    width: 100%;
+  }
+  .date-oneposttrade {
+    width: 80%;
+  }
+  .boton-eliminar-comment {
+    width: 20%;
+  }
+}
+
+@media (width <= 1200px) {
+  .showallcommentsposts-padre {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,54 @@
+@use "../../../public/stylesheets/variables.scss" as *;
+
+.EdicionCursosContainerFormulario {
+//   * {
+//     padding: 0 !important;
+//     margin: 0 !important;
+//  }
+  //inputs:
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem $accent-color !important;
+  }
+  .form-control {
+    height: 35.98px;
+    border: none;
+    border-radius: 25px;
+    padding: 0 10px !important;
+    background-color: $accent5-color;
+  }
+
+  input#formBasicPassword.form-control {
+    border-radius: 25px 0 0 25px; 
+    padding: 0 10px !important;   
+  }
+  .eye-icon {
+    cursor: pointer;
+    height: 35.98px;
+    background-color: $accent5-color;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 2px 0 0 !important;
+
+
+    path {
+      color: $accent2-color;
+    }
+  }
+
+  div.password-container {
+    border-radius: 25px;
+    .form-control:focus {
+      box-shadow: none !important;
+    }
+  }
+  .eye-icon-focused {
+    box-shadow: 0 0 0 0.25rem $accent-color !important;
+  }
+
+  button{
+    padding: 6px 12px !important;
+  }
+
+  
+}

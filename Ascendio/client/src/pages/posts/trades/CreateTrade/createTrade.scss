@@ -1,0 +1,31 @@
+@use "../../../../../public/stylesheets/variables.scss" as *;
+
+.CreateTradeUser {
+  .BotonFoto{  
+    width: 20px;
+    height: 20px;
+  }
+  .ButtonImgCreateTradeInput {
+    width: 90.45px;
+    padding: 6px 35px !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .ButtonsCreateTradeSpacing {
+    margin-right: 1rem !important;
+  }
+
+  .textIndentPlaceholder {
+    text-indent: 0.6rem;
+  }
+
+  .ButtonAcceptCancelCreateTrade {
+    width: 13ch;
+  }
+
+  .LabelPicturesCreateTrade {
+    color: #2E2D2D !important;
+  }
+
+}

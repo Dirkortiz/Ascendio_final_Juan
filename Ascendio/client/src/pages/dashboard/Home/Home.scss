@@ -1,0 +1,36 @@
+@use "../../../../public/stylesheets/variables.scss" as *;
+
+.ascendio-home-row-padre {
+  max-width: 100vw;
+  height: auto;
+  padding: 2vh 10vw;
+
+  .ascendio-home-row-hijo {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0 !important;
+    
+    button {
+      width: 50%;
+    }
+  }
+}
+
+.home-link-traders {
+  text-decoration: none;
+  color: white;
+}
+
+.ascendio-home-post-padre {
+  height: auto;
+  max-width: 100vw;
+
+  .ascendio-home-col-cards {
+    width: 100%;
+    color: white;
+    @include display-flex(row, flex-start, center);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0 !important;
+  }
+}

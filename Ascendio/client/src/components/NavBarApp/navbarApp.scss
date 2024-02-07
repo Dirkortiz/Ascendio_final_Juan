@@ -1,0 +1,207 @@
+@use "../../../public/stylesheets/variables.scss" as *;
+body {
+  background-color: $tertiary-color;
+}
+
+.logoSize{
+  height: 35.5px;
+  padding-bottom: 6px;
+  margin-bottom: 3px;
+  margin-right: -1px;
+  content: url('http://localhost:3000/images/cursos/defaultblack.png');
+}
+
+@media (min-width: 992px) {
+ 
+  .BG-navbar {
+    background-color: $accent-color;
+  }
+}
+
+header {
+  padding: 0 !important; // CRISTIAN
+}
+
+nav {
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1d1d1b;
+    color: #e15252;
+    border: 1px solid $accent-color;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    p {
+      margin: 0 !important;
+      height: 40px;
+      color: #e15252 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+  
+      
+    }
+  }
+
+  
+
+  p {
+    font-size: 30px;
+  }
+
+  .user {
+    cursor: pointer;
+  }
+
+  .logoNav {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .logoNav:hover {
+    color: white;
+  }
+  .logoNav:focus {
+    color: white;
+  }
+  padding: 0 10vw !important;
+  a.nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    padding: 0 12px !important;
+    display: flex;
+    align-items: center;
+  }
+  a.nav-link:hover {
+    color: $tertiary-color;
+  }
+
+  a.nav-link:focus {
+    color: $tertiary-color;
+  }
+
+  .ButtonRegister {
+    padding: 6px 12px !important;
+    margin-left: 12px !important;
+    color: white !important;
+    font-weight: 500 !important;
+    font-size: large !important;
+    border: 2px solid $secondary-color !important;
+    background-color: $secondary-color;
+    transition: 0.3s;
+  }
+  .ButtonRegister:hover {
+    color: $tertiary-color !important;
+    background-color: white !important;
+    border: 2px solid white !important;
+  }
+
+  .ButtonLogin {
+    padding: 6px 12px !important;
+    margin: 0 0 0 12px !important;
+    color: white !important;
+    font-weight: 500 !important;
+    font-size: large !important;
+    border: 2px solid white !important;
+    transition: 0.3s;
+  }
+  .ButtonLogin:hover {
+    color: $tertiary-color !important;
+    background-color: transparent !important;
+    border: 2px solid $tertiary-color !important;
+  }
+
+  button.navbar-toggler.collapsed {
+    border: none;
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'  fill='white' class='bi bi-list' viewBox='0 0 16 16'%3e%3cpath d='M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 5.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 9.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 13.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
+    }
+  }
+  button.navbar-toggler {
+    border: none;
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23e15252' class='bi bi-list' viewBox='0 0 16 16'%3e%3cpath d='M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 5.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 9.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 13.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  
+  .logoSize {
+    content: url('http://localhost:3000/images/cursos/default.png');
+}
+
+  .BG-navbar {
+    background-color: transparent;
+    padding: 0 !important; // CRISTIAN
+  }
+
+  .navbarLinksBotones {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: flex-end !important;
+
+    .user {
+      margin-bottom: 12px;
+      p {
+        color: $accent-color;
+        margin: 0 12px !important;
+      }
+      img {
+        border: 1px solid $accent-color;
+      }
+    }
+
+    a.nav-link {
+      padding: 0 0 12px 0 !important;
+    }
+
+    a.nav-link:hover {
+      color: $accent-color;
+    }
+
+    .ButtonLogin {
+      margin: 0 0 12px 0 !important;
+      padding: 6px 24.545px !important;
+    }
+
+    .ButtonRegister {
+      margin: 0 0 12px 0 !important;
+    }
+
+    .ButtonLogin:hover {
+      color: $accent-color !important;
+      border: 2px solid $accent-color !important;
+    }
+  }
+}
+
+//navbar-collapse collapse

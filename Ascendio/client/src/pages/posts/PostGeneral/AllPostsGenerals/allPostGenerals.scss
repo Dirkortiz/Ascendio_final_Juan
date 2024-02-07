@@ -1,0 +1,44 @@
+@use "../../../../../public/stylesheets/variables.scss" as *;
+// Generales
+.allpostgenerals {
+  padding: 2vh 0;
+  width: 80%;
+  margin: 0 auto;
+
+  .ascendio-home-row-hijo {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0 !important;
+    button {
+      width: 50%;
+    }
+  }
+
+  .input-container {
+    span {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .buscador {
+      height: 36px;
+      transition: 0.1s;
+      &:focus {
+        border: 0.25rem solid $accent-color !important;
+      }
+    }
+  }
+
+  @media (max-width: 515px) {
+    .UserProfileScss {
+      .DivGrisParaBotones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .BobotnesCREARYCURSOS {
+          width: 100% !important; // Ocupar el 100% del ancho
+          margin-bottom: 5px; // Agregar espacio entre los botones
+        }
+      }
+    }
+  }
+}

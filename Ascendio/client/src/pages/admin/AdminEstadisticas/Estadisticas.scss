@@ -1,0 +1,49 @@
+@use "../../../../public/stylesheets/variables.scss" as *;
+
+p {
+  font-size: 16px;
+  margin: 0.5rem !important;
+}
+
+.Psub {
+  color: rgb(197, 195, 195);
+}
+
+.Ptitle {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.Pstat {
+  color: #e15252;
+  font-size: 28px;
+}
+
+.Statsdiv {
+  background-color: $accent2-color;
+  height: 35rem;
+  width: 20rem;
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .RowStatsAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Statsdiv {
+    width: 30rem;
+    transition: 0.7s;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .Statsdiv {
+    width: 20rem;
+    transition: 0.7s;
+  }
+}
+

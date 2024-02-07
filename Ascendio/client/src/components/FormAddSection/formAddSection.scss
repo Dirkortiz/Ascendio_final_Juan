@@ -1,0 +1,52 @@
+@use "../../../public/stylesheets/variables.scss" as var;
+@use "../../../public/stylesheets/ButtonsApp.scss" as boton;
+@use "../../../public/stylesheets/FormulariosEInputs.scss" as formu;
+
+.formSection {
+  width: 70%;
+
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem var.$accent-color !important;
+  }
+  .form-control {
+    height: 35.98px;
+    border: none;
+    border-radius: 25px;
+    padding: 0 10px !important;
+    background-color: var.$accent5-color;
+  }
+
+  .botonFormSection {
+    .botonesSection {
+      padding: 6px 20px !important;
+      background-color: var.$accent-color;
+      color: var.$accent3-color;
+      border: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: 0.3s;
+      display: flex;
+      justify-content: center;
+      &:active,
+      &:hover {
+        // background-color: $accent3-color ; este era el original
+        background-color: var.$accent2-color;
+        color: var.$accent-color;
+      }
+    }
+  }
+}
+
+@media (width < 610px) {
+  .formSection .botonFormSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+
+    .botonesSection{
+      font-size: 0.9rem;
+      width: 80px;
+    }
+  }
+}

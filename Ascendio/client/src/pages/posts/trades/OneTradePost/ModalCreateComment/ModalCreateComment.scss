@@ -1,0 +1,25 @@
+@use "../../../../../../public/stylesheets/variables.scss" as *;
+
+.modal-comment-padre {
+
+
+  border-radius: 50px;
+  .modal-comment-body {
+    background-color: #2E2D2D;
+    border-radius: 1rem !important;
+    .modal-comment-title {
+      color: $accent-color;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.modal-content{
+  border-radius: 2rem !important;
+}
+
+.botonera-modal-post{
+  margin-top: 1rem;
+  @include display-flex(row, flex-start, center);
+  gap: 1rem;
+}

@@ -1,0 +1,31 @@
+@use "../../../../../public/stylesheets/variables.scss" as *;
+.BotoneraTiposDeTrade{
+  width: 100%;
+
+  button{
+    width: 33.3%;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 16px;
+    color: $accent-color;
+    border-radius: 25px;
+    transition: 0.3s;
+    
+    &:hover {
+      background-color: $accent2-color;
+      border-radius: 25px;
+      color: $accent-color;
+    }
+
+    &:active {
+      background-color: $accent2-color !important;
+      border-radius: 25px;
+      color: $accent-color;
+    }
+    
+  }
+}
+
+.AllTradesPostGap{
+  gap: 3.33% !important;
+}

@@ -1,0 +1,28 @@
+// _variables.scss
+
+// Colores
+$primary-color: #aa474c;
+$secondary-color: #020301;
+$tertiary-color: #1d1d1b;
+$accent-color:#E15252;
+$accent2-color: #2E2D2D;
+$accent3-color: #FFFFFF; 
+$accent4-color: #5DE152;
+$accent5-color: #9C9999;
+
+// Flex
+@mixin display-flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+//Responsive
+$movil: 600px;        // Tamaño típico de móviles en posición vertical
+$tableta: 768px;      // Tamaño típico de tabletas en posición vertical
+$portatil: 1024px;    // Tamaño típico de portátiles
+$grande: 1200px;      // Tamaño típico de pantallas grandes
+
+//992px En adelante, pc
+//991px por debajo, movil

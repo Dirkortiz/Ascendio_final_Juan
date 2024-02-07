@@ -1,0 +1,121 @@
+@import '../../../public/stylesheets/variables.scss';
+
+.UserProfileScss{
+  max-width: 100vw;
+  padding: 5vh 10vw;
+  max-width: 100vw;
+  margin: 0 !important;
+
+  .avatarProfilo {
+    width: 15vw;
+    min-width: 140px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 0.25rem solid $accent-color;
+    margin: 0 auto; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    p{
+      margin: 0 !important;
+        height: 100%;
+        width: 100%;
+        color: #e15252;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10vw;
+    }
+  }
+  .PorcentajeAciertos{
+    margin: 8px 0 0 0 !important;
+  }
+
+  .PDatosPerfil{
+    margin: 0 !important;
+    font-size: 12px;
+    color: $accent5-color;
+  }
+
+  .TradesGreen{   
+    margin: 0 !important;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5de152 !important;
+  }
+
+  .TradesRed {
+    margin: 0 !important;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $accent-color !important; 
+
+  }
+
+  .linksPerfil{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .Button3{
+    font-size: 10px;
+    padding: 4px 10px !important;    
+  }
+
+
+  .Button5{
+    display: flex;
+    align-items: center;
+    img{
+      margin: 0 16px 0 20px;
+      width: 50px;
+      height: 50px;
+    }
+    color: white !important;
+    margin-bottom: 16px;
+    padding: 1.5rem 200px 1.5rem 20px  !important;
+    border-radius: 50px;
+  }
+
+  .BobotnesCREARYCURSOS{
+    width: 50% !important;
+  }
+
+
+  .Button2{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 515px) {
+  .UserProfileScss{
+    .DivGrisParaBotones{
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      .BobotnesCREARYCURSOS {
+        width: 100% !important; // Ocupar el 100% del ancho
+        margin-bottom: 5px; // Agregar espacio entre los botones
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Button5 {
+    img {
+      margin-left: 0 !important;
+      margin-right: 10px !important;
+    }
+  }
+}

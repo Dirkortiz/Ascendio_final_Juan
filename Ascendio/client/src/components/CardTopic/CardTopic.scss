@@ -1,0 +1,102 @@
+@import "../../../public/stylesheets/variables.scss";
+.pplTopic {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  .TopicCardBody {
+    .pplCardTopic {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .titleTopic {
+        width: 70%;
+        font-size: 1.2rem;
+        color: $accent3-color;
+      }
+      .botonsppalCardTopic {
+        width: 9vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .addTopic {
+          width: 30px;
+          background-color: transparent;
+          border: 1px solid $accent3-color;
+          border-radius: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          .addIcon {
+            color: $accent3-color;
+            padding: 0 !important;
+          }
+        }
+        .deleteTopic {
+          width: 30px;
+          background-color: transparent;
+          border: 1px solid $accent3-color;
+          border-radius: 30%;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          .deleteIcon {
+            color: $accent3-color;
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .pplTopic {
+    .TopicCardBody {
+      .pplCardTopic {
+        .deleteTopic {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 740px) {
+  .pplTopic {
+    .TopicCardBody {
+      .pplCardTopic {
+        display: flex;
+        flex-direction: column;
+        .titleTopic {
+          font-size: 1rem;
+          width: 90%;
+        }
+      }
+      .botonsppalCardTopic {
+        margin-left: 2rem;
+        .addTopic{
+          width: 10px;
+        }
+        .deleteTopic {
+          margin-right: 1.5rem;
+          width: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .pplTopic {
+    .TopicCardBody {
+      .pplCardTopic {
+        .titleTopic {
+          font-size: 1rem;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

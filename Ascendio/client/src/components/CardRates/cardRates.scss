@@ -1,0 +1,26 @@
+@import "../../../public/stylesheets/variables.scss";
+
+.cardRates {
+  background-color: $accent2-color;
+  border: 1px solid white;
+  color: white;
+}
+
+.cardRatesInput {
+  background-color: $accent2-color;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  
+  &::placeholder {
+    color: white;
+  }
+
+  &:focus-visible {
+    background-color: $accent2-color;
+    color: white;
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem white;
+  }
+}

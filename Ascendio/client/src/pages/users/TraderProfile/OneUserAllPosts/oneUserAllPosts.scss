@@ -1,0 +1,17 @@
+@use "../../../../../public/stylesheets/variables.scss" as *;
+
+// Generales 
+
+.OneUserAllPostsScss{
+  padding: 0 !important;
+   button.Button4 {
+    width: 50%;
+    background-color: transparent;
+    color: $accent-color;
+    &:hover {
+      background-color: $accent2-color
+    }
+    
+    
+   }
+}

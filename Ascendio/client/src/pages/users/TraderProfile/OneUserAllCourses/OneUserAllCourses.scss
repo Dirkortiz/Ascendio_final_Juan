@@ -1,0 +1,17 @@
+@use "../../../../../public/stylesheets/variables.scss" as *;
+
+.user-course-padre {
+  background-color: $accent2-color;
+  height: 600px;
+  color: white;
+
+  .user-courses-courseimg {
+    max-width: 400px;
+    min-width: 280px;
+  }
+
+  .user-courses-coursetitle{
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,120 @@
+@use '../../../public/stylesheets/variables.scss' as var;
+@use '../../../public/stylesheets/ButtonsApp.scss' as boton;
+
+.accordion-item:first-of-type .accordion-button {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px ;
+  }
+    .accordion-item:last-of-type .accordion-button.collapsed {
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+  }
+  .accordion-item .accordion-button {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px ;
+}
+  .accordion-item .accordion-button.collapsed {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.sectionCard{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  .sectionHeader{
+    button, button:not(.collapsed){
+      background-color: var.$tertiary-color;
+      border:none;
+    }
+    button::after, button:not(.collapsed)::after{
+      filter: invert(1);
+      border-radius: 30px;
+      border: none;
+    }
+  }
+  .pplCardSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .titleSection{
+      width: 70%;
+      font-size: 1.3rem;
+      color: var.$accent-color;
+    }
+    .botonsppalCardSection{
+      width: 10vw;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      .addSection{
+        width: 40px;
+        background-color: transparent;
+        border: 2px solid #E15252;
+        border-radius: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .addIcon{
+          color: #E15252;
+          padding: 0 !important;
+        }
+      }
+      .deleteSection{
+        width: 40px;
+        background-color: transparent;
+        border: 2px solid #E15252;
+        border-radius: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .deleteIcon{
+          color: #E15252;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+.accordion-body{
+  background-color: var.$accent5-color;
+  border-radius: 0 0 30px 30px;
+}
+@media (max-width: 1100px){
+  .sectionCard{
+    .pplCardSection{
+      .botonsppalCardSection{
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 740px){
+  .sectionCard{
+    .sectionHeader{
+      .pplCardSection{
+        display: flex;
+        flex-direction: column;
+        .titleSection{
+          font-size: 1rem;
+          width: 90%;
+        }
+      }
+      .botonsppalCardSection{
+        margin-right: 1rem;
+        .addSection{
+          width: 10px;
+          aspect-ratio: 1/1;
+          padding: 0.9rem;
+          margin-left: 3rem;
+          
+        }
+        .deleteSection{
+          width: 10px;
+          aspect-ratio: 1/1;
+          padding: 0.9rem;
+        }
+      }
+    }
+  }
+}

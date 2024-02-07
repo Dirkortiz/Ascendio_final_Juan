@@ -1,0 +1,86 @@
+@use '../../../../public/stylesheets/variables.scss' as *;
+
+.UserFollowingScss {
+  padding: 2vh 10vw;
+  .UserFollowingCard {
+    background-color: rgb(43, 42, 41);
+    width: 100%;
+    color: white;
+    border-radius: 6rem;
+    padding: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+  h3{
+    margin:8px;
+  }
+
+  .DivContainer3divs {
+    width: 100% !important;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+ 
+  @media screen and (min-width: 600px) {
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    .BuscadorShowAllUsers {
+      margin-left: 25rem !important;
+      transition: 0.5s;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .BuscadorShowAllUsers {
+      transition: 0.5s;
+    }
+  }
+  
+  @media screen and (max-width: 682px) {
+    .RowShowAllUsersHeader {
+      flex-direction: column;
+      text-align: center !important;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .AdminUserImg {
+      width: 30%;
+    }
+
+    .AdminUserButton {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .input-container {
+    display: flex;
+  align-items: center;
+    span {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .buscador {
+      height: 36px;
+      transition: 0.1s;
+      &:focus {
+        border: 0.25rem solid $accent-color !important;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+

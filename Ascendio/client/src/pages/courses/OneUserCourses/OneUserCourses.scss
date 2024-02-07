@@ -1,0 +1,84 @@
+@import "../../../../public/stylesheets/variables.scss";
+
+.mapeoAllCourseOneUser{
+  background-color: $accent2-color;
+}
+
+.mainAllCoursesOneUser, .headerAllCoursesOneUser {
+  width: 80vw;
+  margin: 0 auto; 
+}
+
+.descriptioncard{
+  font-size: 1rem;
+  color: #9C9999 !important;
+}
+
+.tagsCourse{
+  color: $accent-color;
+}
+
+
+
+.input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $accent5-color;
+}
+
+.buscador {
+  outline: none;
+  background-color: $accent2-color;
+  color: $accent5-color;
+  border: none;
+  border-radius: 25px;
+  padding-left: 2.5rem; 
+  padding-right: 0.8rem; 
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+
+.imgOneCourses {
+  object-fit: cover;
+}
+
+.imgScale {
+  object-fit: scale-down;
+}
+
+
+
+@media (max-width: 945px) {
+  .headerAllCoursesOneUser {
+    .divHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .div {
+        margin-bottom: 1rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buscador {
+        width: 100%;
+        max-width: 30vw;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .search-icon{
+    margin-top: 0.5rem;
+  }
+}

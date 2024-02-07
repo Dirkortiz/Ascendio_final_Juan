@@ -1,0 +1,59 @@
+@import "../../../public/stylesheets/variables.scss";
+
+.nav-bar-button-courses {
+  z-index: 1;
+}
+
+.mapeoAllCourse {
+  background-color: $accent2-color;
+}
+
+.mainAllCourses,
+.headerAllCourses {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.descriptioncard {
+  font-size: 1rem;
+  color: #9c9999 !important;
+}
+
+.followerscard {
+  color: white;
+  font-size: 1rem;
+}
+
+.tagsCourse {
+  color: $accent-color;
+}
+.busqueda {
+  color: white;
+}
+
+.cardtitle {
+  color: white !important;
+}
+
+@media (max-width: 945px) {
+  .headerAllCourses {
+    .divHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .div {
+        margin-bottom: 1rem; 
+
+        .Button3 {
+          margin-top: 1rem;
+        }
+      }
+
+      .buscador {
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

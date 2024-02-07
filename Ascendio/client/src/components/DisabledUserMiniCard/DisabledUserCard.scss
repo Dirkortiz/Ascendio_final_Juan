@@ -1,0 +1,34 @@
+.userMiniCardAdminView3 {
+  background-color: rgb(43, 42, 41);
+  color: white;
+  border-radius: 6rem;
+  padding: 2rem;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    aspect-ratio: 1/1;
+  }
+
+  button {
+    width: 14ch;
+  }
+
+  p {
+    color: white;
+    text-align: left;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .userMiniCardAdminView3 {
+    padding: 1rem;
+    border-radius: 3rem;
+
+    img {
+      width: 75px;
+    }
+  }
+} 

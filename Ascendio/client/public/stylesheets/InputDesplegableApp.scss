@@ -1,0 +1,41 @@
+@use "./variables.scss" as *;
+.inputDesplegableRetocado{
+  &:focus-visible {
+    background-color: $accent2-color;
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem white;
+  }
+
+  div.css-13cymwt-control{
+    height: 35.98px;
+    border: none;
+    background-color: $accent5-color;
+    border-radius: 25px;
+    
+    div.css-4xgw5l-IndicatorsContainer2{
+      span.css-1u9des2-indicatorSeparator{
+       background-color:  $accent2-color !important;
+      }
+      path {
+        color: $accent2-color;
+      }
+    }
+  }
+
+  div.css-t3ipsp-control{
+    background-color: $accent5-color !important;
+    border-radius: 25px !important;
+    border: none !important;
+    box-shadow: 0 0 0 0.25rem $accent-color !important;
+    
+    div.css-4xgw5l-IndicatorsContainer2{
+      span.css-1u9des2-indicatorSeparator{
+       background-color:  $accent-color !important;
+      }
+      path {
+        color: $accent-color !important;
+      }
+    }
+  }
+}

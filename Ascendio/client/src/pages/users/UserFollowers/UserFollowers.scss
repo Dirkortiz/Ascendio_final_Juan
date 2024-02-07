@@ -1,0 +1,115 @@
+@use "../../../../public/stylesheets/variables.scss" as *;
+.UserFollowerScss {
+  padding: 2vh 10vw;
+  .UserFollower {
+    width: 100%;
+    padding: 0 !important;
+
+    .UserFollowerCard {
+      background-color: rgb(43, 42, 41);
+      width: 100%;
+      color: white;
+      border-radius: 6rem;
+      padding: 2rem;
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        aspect-ratio: 1/1;
+      }
+
+      button {
+        width: 180px;
+      
+      }
+      
+
+      p {
+        color: white;
+        text-align: left;
+      }
+      h3{
+        margin:8px;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      .UserImg {
+        width: 30%;
+      }
+      .UserStats {
+        width: 70%;
+      }
+      .UserButton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .UserFollowerCard {
+        padding: 1rem;
+        border-radius: 3rem;
+
+        img {
+          width: 75px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      .BuscadorShowAllUsers {
+        margin-left: 25rem !important;
+        transition: 0.5s;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .BuscadorShowAllUsers {
+        transition: 0.5s;
+      }
+    }
+
+    @media screen and (max-width: 682px) {
+      .RowShowAllUsersHeader {
+        flex-direction: column;
+        text-align: center !important;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      .UserImg {
+        width: 30%;
+      }
+
+      .UserButton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .input-container {
+    display: flex;
+  align-items: center;
+    span {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .buscador {
+      height: 36px;
+      transition: 0.1s;
+      &:focus {
+        border: 0.25rem solid $accent-color !important;
+      }
+    }
+  }
+  button.Button4{
+    width: 97.72px !important;
+  }
+}

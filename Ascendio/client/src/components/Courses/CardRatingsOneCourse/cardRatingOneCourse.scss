@@ -1,0 +1,14 @@
+@import '../../../../public/stylesheets/variables.scss';
+
+.cardRateOneCourse {
+  background-color: $accent2-color;
+  border: 1px solid white;
+  color: white;
+  width: 25rem;
+}
+
+@media (width <= 500px) {
+  .cardRateOneCourse{
+    width: 15rem;
+  }
+}

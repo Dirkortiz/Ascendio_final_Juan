@@ -1,0 +1,72 @@
+@import "../../../../public/stylesheets/variables.scss";
+
+.createcourseformulario {
+  .addIcon {
+    color: #e15252;
+    font-size: 33px;
+    cursor: pointer;
+    margin-top: 9px;
+    padding: 0 !important;
+  }
+
+  .imagencurso {
+    border-radius: 50%;
+    height: 70px;
+    width: 75px;
+    background-color: #2e2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e15252;
+    cursor: pointer;
+  }
+
+  .react-select {
+    &__control {
+      background: $accent2-color !important; // Color de fondo
+    }
+
+    &__control--is-focused {
+      /* background: #e15252 !important; */ // Color de fondo al estar enfocado
+      background-color: white;
+      border-color: white !important;
+      outline: none;
+      box-shadow: 0 0 0 0.1rem white;
+    }
+
+    &__multi-value__label {
+      color: #e15252 !important; //texto escrito dentro de los tags
+    }
+
+    &__multi-value__remove {
+      //x equis
+      svg {
+        fill: #e15252 !important;
+      }
+    }
+
+    &__option {
+      background-color: #2e2d2d !important; //background tags
+      &--is-selected {
+        background: #2e2d2d; // Color de fondo de las opciones seleccionadas
+        color: #e15252; // Color del texto de las opciones seleccionadas
+      }
+
+      &:hover {
+        background: #2e2d2d; // Color de fondo al pasar el ratón
+        color: #e15252; // Color del texto al pasar el ratón
+      }
+    }
+  }
+
+  .inputCreación {
+    border-radius: 2rem;
+    &:focus-visible {
+      background-color: $accent2-color;
+      color: white;
+      border-color: white;
+      outline: 0;
+      box-shadow: 0 0 0 0.1rem white;
+    }
+  }
+}

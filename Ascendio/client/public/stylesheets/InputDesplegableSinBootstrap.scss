@@ -1,0 +1,64 @@
+ @use "../stylesheets/variables.scss" as *;
+
+// .InputDesplegableSinBootstrap {
+//   background-color: $accent5-color;
+//   height: 45.96px;
+//   border-radius: 25px;
+//   color: black;
+
+//   &:focus {
+//     box-shadow: 0 0 0 0.25rem $accent-color;
+//     outline: none !important;
+//     border: none;
+//     background-color: $accent5-color;
+//   }
+
+//   option:first-child {
+//     margin-top: 10px; // Ajusta el margen superior según tus preferencias
+//   }
+
+//   & option {
+//     background-color: $accent5-color;
+//     color: black;
+//   }
+
+//   option:hover,
+//   option:focus,
+//   option:active {
+//     background-color: $accent-color !important;
+//     color: white;
+//   }
+
+// }
+
+
+
+.InputDesplegableSinBootstrap {
+  background-color: $accent5-color;
+  height: 35.96px;
+  border-radius: 25px;
+  color: black;
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem $accent-color;
+    outline: none !important;
+    border: none;
+    background-color: $accent5-color;
+  }
+
+  option:first-child {
+    margin-top: 10px;
+  }
+
+  & option {
+    background-color: $accent5-color;
+    color: black;
+  }
+
+  & option:hover,
+  & option:focus,
+  & option:active {
+    background-color: $accent-color !important;
+    color: white;
+  }
+}

@@ -1,0 +1,110 @@
+@import '../../../public/stylesheets/variables.scss';
+
+
+.pplCardResource{
+  width: 100%;
+
+  .botonResource{
+    background-color: transparent;
+    border: 1px solid $accent3-color;
+    border-radius: 20px;
+    margin-left: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      border: 1px solid $accent3-color;
+      box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+    }
+    
+
+    .resourceIcon{
+      color: $accent3-color;
+      font-size: 20px;
+      padding: 0 !important;
+    }
+  }
+
+  .delResource{
+    background-color: transparent;
+    border: 1px solid #e15252;
+    border-radius: 30%;
+    
+    .delIcon{
+      color: #e15252;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .pplCardResource{
+    .botonResource{
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+  }
+}
+@media (max-width: 972px) {
+  .pplCardResource{
+    .botonResource{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+@media (max-width: 947px) {
+  .pplCardResource{
+    .botonResource{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+}
+@media (max-width: 740px) {
+  .pplCardResource{
+    .botonResource{
+      margin-left: 60%;
+      padding-left: 16%;
+      padding-right: 16%;
+    }
+  }
+}
+@media (max-width: 690px) {
+  .pplCardResource{
+    .botonResource{
+      margin-left: 57%;
+
+    }
+  }
+}
+@media (max-width: 650px) {
+  .pplCardResource{
+    .botonResource{
+      margin-left: 57%;
+
+    }
+  }
+}
+@media (max-width: 600px) {
+  .pplCardResource{
+    .botonResource{
+      margin-left: 57%;
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+  }
+}
+@media (max-width: 430px) {
+  .pplCardResource{
+    .botonResource{
+      margin-top: 5%;
+      margin-left: 50%;
+      padding-left: 20%;
+      padding-right: 20%;
+
+    }
+  }
+}

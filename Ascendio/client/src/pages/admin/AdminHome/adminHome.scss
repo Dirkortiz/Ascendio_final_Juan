@@ -1,0 +1,43 @@
+.AdminRow {
+  background-color: #1d1d1b;
+  min-height: calc(100vh - 77px);
+  color: white;
+  max-width: 1530px;
+  width: 95%;
+  margin: 0 auto; 
+
+  @media screen and (min-width: 1700px) {
+    .AdminRow {
+      margin-left: 10rem !important;
+    }
+  }
+
+  .ButtonsRow {
+    button {
+      width: 14ch;
+    }
+  }
+
+  .TradeButtonsRow {
+    button {
+      width: 12ch;
+    }
+  }
+
+  .AscendioColorBG {
+    background-color: #e15252;
+  }
+  
+  .AscendioColor {
+    color: #e15252;
+  }
+
+  .ButtonNoBG {
+    background-color: transparent;
+    color: #e15252;
+    border: none;
+    text-decoration: underline;
+  }
+  
+}
+

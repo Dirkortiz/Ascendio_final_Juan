@@ -1,0 +1,53 @@
+@import "../../../../public/stylesheets/variables.scss";
+
+*{
+  color: white;
+}
+.mapeoCursosComprados{
+  /* background-color: #2E2D2D; */
+  background-color: $accent2-color;
+  
+}
+
+.mainCursosComprados, .headerCursosComprados {
+  width: 80vw;
+  margin: 0 auto; 
+}
+
+
+.descriptioncard{
+  font-size: 1rem;
+  color: #9C9999 !important;
+}
+.followerscard{
+  color: white;
+  font-size: 1rem;
+}
+
+.tagsCourse{
+  color: $accent-color;
+  font-size: 1rem;
+}
+
+@media (max-width: 945px) {
+  .headerCursosComprados {
+    .divHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .div {
+        margin-bottom: 1rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buscador {
+        width: 100%;
+        max-width: 30vw;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

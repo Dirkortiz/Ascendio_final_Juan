@@ -1,0 +1,99 @@
+@use "../../../../../public/stylesheets/variables.scss" as *;
+.onetradepost {
+  padding: 2vh 10vw;
+  @media (max-width: 1200px) {
+    .hide-on-small-screen {
+      display: none;
+    }
+  }
+}
+.card-padre-onetradepost {
+  height: 100% !important;
+  min-height: 85vh !important;
+  max-height: 85vh !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 2rem;
+  background-color: $accent2-color;
+  padding: 2rem !important;
+
+  button.Button1 {
+    margin-bottom: 1rem !important;
+  }
+  
+  .card-hijo1-onetradepost {
+    @include display-flex(row, space-between, flex-start);
+    max-height: 10%;
+    height: 10%;
+  }
+  .card-hijo2-onetradepost {
+    max-height: 80%;
+    height: 80%;
+    .DivImagenCard {
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100px;
+      max-height: 100px;
+      padding: 0 !important;
+      margin-top: 8px;
+      img {
+        max-height: 100px;
+        object-fit: contain;
+        border-radius: 5px;
+      }
+    }
+    .card-nieto-onetradpost {
+      height: calc(100% - 100px);
+      @include display-flex(column, center, flex-start);
+      gap: 4px;
+      p {
+        margin: 0 !important;
+        span {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+  .card-hijo3-onetradepost {
+    height: 10%;
+    max-height: 10%;
+    @include display-flex(row, flex-start, center);
+    .h4-white-pending {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .h4-green-correct {
+      margin: 0 !important;
+      padding: 0 !important;
+      color: $accent4-color;
+    }
+    .h4-red-incorrect {
+      margin: 0 !important;
+      padding: 0 !important;
+      color: $primary-color;
+    }
+  }
+}
+.CardSinFoto {
+  height: 100px;
+  width: 100px;
+}
+.nickname-card-onetradepost {
+  margin: 0 !important;
+  a {
+    color: white;
+    text-decoration: none;
+    @include display-flex(row, center, center);
+  }
+}
+
+@media (width <= 1200px) {
+  .onetradepost {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

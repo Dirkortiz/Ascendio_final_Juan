@@ -1,0 +1,191 @@
+@use "./variables.scss" as *;
+
+//boton de rosa a blanco redondeado:
+.Button1 {
+  padding: 6px 20px !important;
+  background-color: $accent-color;
+  color: $accent2-color;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+
+  &:hover {
+    background-color: $accent3-color;
+    color: $accent-color;
+  }
+  &:active {
+    background-color: $accent3-color;
+    color: $accent-color;
+  }
+}
+
+//boton gris a rosa:
+.Button2 {
+  padding: 6px 20px !important;
+  background-color: $accent2-color;
+  color: $accent-color;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+
+  &:hover {
+    background-color: $accent-color !important;
+    color: $accent2-color !important;
+  }
+  &:active {
+    background-color: $accent-color !important;
+    color: $accent2-color !important;
+  }
+}
+
+//div Gris Para Botones
+.DivGrisParaBotones {
+  background-color: $accent2-color;
+  display: inline-flex;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+//boton seguir: de blanco a rosa
+.Button3 {
+  padding: 6px 20px !important;
+  background-color: $accent3-color;
+  color: $accent2-color;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+
+  &:active {
+    background-color: $accent-color;
+    color: $accent2-color;
+  }
+  &:hover {
+    background-color: $accent-color;
+    color: $accent2-color;
+  }
+}
+
+//boton siguiendo: de rosa a blanco
+.Button4 {
+  padding: 6px 20px !important;
+  background-color: $accent-color;
+  color: $accent3-color;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+
+  &:hover {
+    // background-color: $accent3-color ; este era el original
+    background-color: $accent2-color;
+    color: $accent2-color $accent2-color;
+  }
+
+  &:active {
+    background-color: $accent2-color;
+    color: $accent2-color $accent2-color;
+  }
+}
+
+//boton menus para sitios como dentro de editar perfil: de gris-rosa a rosa-gris
+
+//*** HAY QUE CAMBIARLE EL PADDING SEGUN CONVENGA  A CADA VISTA. si vas a usar este boton, copialo en el scss donde estes trabajando, cambiale el nombre y usalo.
+.Button5 {
+  display: flex;
+  padding: 6px 200px 6px 20px !important;
+  background-color: $accent2-color;
+  color: $accent-color;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que desborda el contenedor */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto desborda */
+
+  &:hover {
+    background-color: $accent-color;
+    color: $accent2-color;
+  }
+  &:active {
+    background-color: $accent-color !important ;
+    color: $accent2-color !important;
+  }
+}
+
+//buscador
+//jsx
+/*
+<div className="input-container">
+<span className="material-symbols-outlined search-icon">
+  search
+</span>
+<input
+  onChange={handleChange}
+  placeholder="Buscar"
+  value={filter}
+  className="buscador"
+/>
+</div>
+*/
+//scss
+/*.input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $accent5-color;
+}
+
+.buscador {
+  outline: none;
+  background-color: $accent2-color;
+  color: $accent5-color;
+  border: none;
+  border-radius: 25px;
+  padding-left: 2.5rem; 
+  padding-right: 0.8rem; 
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+*/
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $tertiary-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
+  border-radius: 1rem;
+  border: 2px solid $tertiary-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $primary-color;
+}

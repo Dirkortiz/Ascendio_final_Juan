@@ -1,0 +1,33 @@
+@import "../../../public/stylesheets/variables.scss";
+//@import "../../../public/stylesheets/FormulariosEInputs.scss";
+
+.modalResource {
+  &,
+  &.modal-dialog,
+  &.modal-content,
+  &.modal-header,
+  &.modal-body,
+  &.modal-footer {
+    background-color: $accent2-color;
+    border-color: $accent2-color;
+    color: #9c9999;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem $accent-color !important;
+  }
+  .form-control {
+    height: 35.98px;
+    border: none;
+    border-radius: 25px;
+    background-color: $accent5-color;
+  }
+  
+}
+
+.Button4 {
+  min-width: 5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+

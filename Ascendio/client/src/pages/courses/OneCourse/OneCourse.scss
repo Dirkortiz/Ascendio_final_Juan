@@ -1,0 +1,355 @@
+@use "../../../../public/stylesheets/variables.scss" as var;
+@use "../../../../public/stylesheets/ButtonsApp.scss" as boton;
+
+.oneCourse {
+  .CardCourse {
+    width: 75vw;
+    background-color: var.$accent2-color;
+    color: var.$accent3-color;
+    border-radius: 10px;
+
+    .imgOneCourse {
+      width: 100%;
+      aspect-ratio: 1/0.35;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .imgScale {
+      object-fit: scale-down;
+    }
+
+    .oneCourseBody {
+      width: 100%;
+
+      .editIcon {
+        font-size: 100px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 1%;
+      }
+
+      .courseTitle {
+        font-size: 3rem;
+      }
+
+      .followsCourse {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: small;
+        color: #9c9999;
+      }
+
+      .tagCourse {
+        width: 100%;
+        font-size: small;
+        color: var.$accent-color;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .dataCourse {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: right;
+        text-align: left;
+
+        .dataCourseText {
+          font-size: small;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .optionsCourse {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        .icons {
+          display: flex;
+          gap: 100px;
+          a,
+          button {
+            display: flex;
+            align-items: center;
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+
+        .Button1,
+        .validarButton,
+        .Button2{
+          width: 12rem;
+        }
+
+        .priceCourse {
+          font-size: 1rem;
+          color: var.$accent3-color;
+          border: 1px solid white;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .bubbleCourse {
+          font-size: 30px;
+        }
+
+        .likeBoton {
+          background-color: transparent;
+          border: none;
+
+          .addLike {
+            color: var.$primary-color;
+            font-size: 30px;
+          }
+
+          .deleteLike {
+            color: var.$accent-color;
+            font-size: 30px;
+          }
+        }
+      }
+
+
+      .descriptionCourse {
+        width: 90%;
+        font-size: 1rem;
+        color: #9c9999;
+      }
+
+      .Button1 {
+        &:hover,
+        &:active {
+          background-color: transparent;
+        }
+      }
+
+      .comprado {
+        background-color: transparent;
+        color: var.$primary-color;
+        font-size: larger;
+      }
+
+      .courseCardEnd {
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+
+        .validarButton {
+          font-weight: bolder;
+          background-color: transparent;
+          border: 3px solid var.$accent-color;
+          border-radius: 25px;
+          color: var.$accent-color;
+          border-color: var.$accent-color;
+          .Button2 {
+            width: auto;
+          }
+        }
+        .isdisabled{
+          background-color: transparent;
+          color: #e1525267;
+          border: 3px solid #e1525267;
+        }
+      }
+    }
+
+    .accordion {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border-radius: 30px;
+      border: none;
+      margin-bottom: 1rem;
+      gap: 1rem;
+    }
+  }
+}
+
+button{
+  .material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
+
+@media (width < 1060px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        .optionsCourse {
+          gap: 50px;
+          .icons{
+            gap: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 830px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        .optionsCourse {
+          gap: 40px;
+          .icons{
+            gap: 40px;
+          }
+        }
+        .courseTitle{
+          font-size: 2.5rem;
+        }
+        .editIcon{
+          font-size: 2.5rem;
+          padding-top: 2%;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 785px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        .optionsCourse {
+          gap: 30px;
+          .icons{
+            gap: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 740px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        .optionsCourse {
+          gap: 20px;
+          .icons{
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 694px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        .courseTitle{
+          font-size: 2rem;
+        }
+        .optionsCourse {
+          .icons{
+           margin-left: 1.4rem;
+           padding-top: 2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 530px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .optionsCourse {
+          .icons{
+           margin-left: 0rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 430px) {
+  .oneCourse {
+    .CardCourse {
+      .oneCourseBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .editIcon{
+          font-size: 10px;
+          padding: 0;
+        }
+        .courseTitle{
+          font-size: 1.8rem;
+        }
+        .optionsCourse {
+          .icons{
+           margin-left: 0rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 386px) {
+  .oneCourse{
+    .CardCourse{
+      .oneCourseBody{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .optionsCourse{
+          gap: 10px;
+          .icons{
+            gap: 10px;
+          }
+        }
+        .courseTitle{
+          font-size: 1.8rem;
+          text-align: center;
+          width: 50%;
+        }
+        .editIcon{
+          display: flex;
+          justify-content: end;
+          align-items: end;
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 395px) {
+  .oneCourse .CardCourse .oneCourseBody .tagCourse{
+    text-align: center;
+  }
+}

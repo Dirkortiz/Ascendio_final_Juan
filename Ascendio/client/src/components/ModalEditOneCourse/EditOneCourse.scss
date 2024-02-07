@@ -1,0 +1,45 @@
+@import "../../../public/stylesheets/variables.scss";
+  .modalDel {
+    &,
+    &.modal-dialog,
+    &.modal-content,
+    &.modal-header,
+    &.modal-body,
+    &.modal-footer {
+      background-color: $accent2-color;
+      border-color: $accent2-color;
+      color: #9C9999;
+    }
+  }
+  .msgerror {
+    background-color: $accent2-color;
+    color: $accent-color;
+    margin-bottom: 0;
+    padding-left: 1rem;
+  }
+  .edittitle {
+    color: $accent3-color !important;
+  }
+
+  .imgcourseedicion {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: #2E2D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E15252;
+    cursor: pointer;
+  }
+
+  .imagencursodefecto {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E15252;
+    cursor: pointer;
+  }

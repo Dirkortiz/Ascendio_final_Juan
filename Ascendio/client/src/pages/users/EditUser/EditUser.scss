@@ -1,0 +1,131 @@
+@use "../../../../public/stylesheets/variables.scss" as *;
+
+.EditUserApp {
+  max-width: 100vw;
+  width: 100%;
+  padding: 0 10vw;
+
+  .containerAvatar {
+    position: relative;
+  }
+
+  .ciculoLapizEditar {
+    position: absolute;
+    left: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e15252;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: #1d1d1b solid 2px;
+
+    .EditarFotoLapiz {
+      width: 15px;
+      width: 15px;
+    }
+  }
+
+  h3 {
+    color: $accent-color;
+    font-size: 2rem;
+    margin: 0 !important;
+  }
+  p {
+    color: rgb(255, 255, 255);
+    margin: 0 !important;
+  }
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1d1d1b;
+    color: #e15252;
+    border: 2px solid $accent-color;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    p {
+      margin: 0 !important;
+      height: 60px;
+      color: #e15252;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .EditUserMsgSuccess {
+    color: #39a72f !important;
+    padding-top: 1rem !important;
+  }
+
+  .ButtonEditUser1 {
+    display: flex;
+    width: 35vw;
+    padding: 6px 0px 6px 20px !important;
+  }
+
+  .FormularioDatosUsuario {
+    margin-top: 24px;
+    min-width: 280px;
+    background-color: $accent2-color;
+    padding: 12px;
+    border-radius: 25px;
+  }
+  .DivGrisParaBotones {
+    width: 100%;
+    justify-content: end;
+    .Button3 {
+      margin-right: 12px !important;
+    }
+  }
+
+  .botonCancelarEditarLogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      margin: 0 !important;
+    }
+  }
+  .InputDesplegableSinBootstrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .ButtonEditUser1 {
+    display: flex;
+    width: 100% !important;
+    padding: 6px 0px 6px 20px !important;
+  }
+}
+.avatar img {
+  cursor: pointer;
+}
+
+.InputsMinimumWidthEditUser {
+  min-width: 280px !important;
+}
+
+.select-option-black {
+  color: black;
+}
